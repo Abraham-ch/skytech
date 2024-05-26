@@ -1,0 +1,46 @@
+
+<nav>  
+    <div class="hidden text-gray-200 sm:flex justify-between h-16 items-center py-4 px-12 sm:sticky sm:top-0 backdrop:blur-2xl">
+        <a href="/"><p class="font-semibold text-xl">Skytech</p></a>
+            <ul class="font-bold flex gap-x-14 self-center">
+                <li class="hover:text-cyan-600 transition-colors animation-hover">
+                    <a href="/">Inicio</a></li>
+                <li class="hover:text-cyan-600 transition-colors animation-hover">
+                    <a href="/about/">Acerca de</a></li>
+                <li class="hover:text-cyan-600 transition-colors animation-hover">
+                    <a href="/services/">Servicios</a></li>
+                    <li class="hover:text-cyan-600 transition-colors animation-hover">
+                    <a href="/contact/">Contacto</a></li>
+            </ul>
+    </div>
+    <div class="sm:hidden font-bold flex flex-col w-full items-center text-white py-2 justify-center gap-y-2 gap-x-14 divide-y">
+        <a href="/" class="transition-colors py-2 rounded-sm w-full text-center shadow-xl border-cyan-600 hover:bg-cyan-600 text-white duration-500">Home</a>
+        <a href="/about" class="transition-colors py-2 rounded-sm border-t-2 w-full text-center shadow-xl border-cyan-600 hover:bg-cyan-600 text-white duration-500">About us</a>
+        <a href="/services" class="transition-colors py-2 rounded-sm border-t-2 w-full text-center shadow-xl border-cyan-600 hover:bg-cyan-600 text-white duration-500">Services</a>
+    </div>
+</nav>
+
+<style>
+.animation-hover {
+  display: inline-block;
+  position: relative;
+}
+
+.animation-hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(8 145 178 / var(--tw-text-opacity));;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.animation-hover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+</style>

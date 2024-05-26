@@ -1,0 +1,20 @@
+---
+import 'app/globals.css'
+import Layout from '@/layouts/Layout.astro'
+import Footer from '@/components/Footer.astro'
+import Header from "@/components/Header.astro"
+import WeOffer from '@/sections/landing/WeOffer.astro'
+import Main from '@/sections/landing/Main.astro'
+import MeetUs from '@/sections/landing/MeetUs.astro'
+---
+
+<Layout title="Welcome">
+	<Header/>
+	<main class="bg-gradient-to-tr from-10% via-slate-950 from-gray-950 via-80% to-gray-950">
+		<div class="absolute h-2/3 w-2/3 blur-2xl bg-gradient-to-tl from-transparent from-40% mt-24 ml-24 to-violet-700"></div>
+		<Main/>
+		<WeOffer/>
+		<MeetUs/>
+		<Footer/>
+	</main>
+</Layout>

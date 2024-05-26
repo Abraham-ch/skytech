@@ -1,0 +1,23 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+import img from '../figure/mockup.png';
+---
+
+<Layout title="Servicios">
+<Header/>
+    <section class="h-screen w-full text-white">
+        <h1 class="text-5xl font-semibold mx-auto py-8 items-center text-center border-b max-w-7xl">Trabajos recientes</h1>
+        <div class="flex justify-center gap-x-16 max-w-7xl mx-auto items-center pt-8">
+            <Image src={img} alt="Proyecto Surichakra" class="max-w-3xl rounded-xl h-fit"/>
+            <div class="flex flex-col">
+                <h1 class="font-semibold text-4xl">Surichakra</h1>
+                <p class="pt-4 text-lg font-light texst-pretty">Surichakra es una plataforma de gestión IoT en la nube que unifica la conexión, monitorización y gestión de una amplia gama de dispositivos IoT. Destacamos por nuestra interoperabilidad, permitiendo la integración con dispositivos industriales, comerciales y de hogar inteligente.</p>
+                <a target="_blank" href="https://surichakra.vercel.app/" class="rounded-full text-lg text-white bg-black/50 px-6 py-3 self-start mt-8 hover:scale-105 transition-all">Ver más...</a>
+            </div>
+        </div>
+    </section>
+<Footer/>
+</Layout>
